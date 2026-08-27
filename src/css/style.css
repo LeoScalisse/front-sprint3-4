@@ -1,5 +1,3 @@
-
-
 :root {
     --cor1: rgb(92, 92, 224);
     --cor2: #fffcba;
@@ -25,16 +23,13 @@ header {
     padding: 2em;
     background-color: var(--cor1);
     color: var(--cor2);
-    text-decoration: none;
 }
 
-/* MantÃƒÂ©m o tÃƒÂ­tulo com aparÃƒÂªncia de texto, embora ele seja um link para a pÃƒÂ¡gina inicial. */
 #titulo a {
     color: inherit;
     text-decoration: none;
 }
 
-/* A ul ÃƒÂ© o Grid Container e seus li diretos sÃƒÂ£o os Grid Items. */
 .navegacao {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -47,13 +42,86 @@ header {
     text-decoration: none;
 }
 
-.opcoes-nav:hover,
-.opcoes-nav:focus {
+.opcoes-nav:hover{
     color: var(--cor4);
     text-decoration: overline;
 }
 
-/* Em telas pequenas, distribui os quatro itens em duas colunas. */
+.inicio {
+    min-height: 100vh;
+    background-color: var(--cor3);
+}
+
+.inicio .pagina-inicial {
+    display: grid;
+    place-items: center;
+    min-height: 72vh;
+    padding: 4rem 2rem;
+    background-image:
+        linear-gradient(90deg, rgba(11, 13, 30, 0.88), rgba(11, 13, 30, 0.45)),
+        url("../assests/foto-main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-inicio {
+    width: min(100%, 720px);
+    color: white;
+}
+
+.hero-inicio__etiqueta {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--cor2);
+    color: var(--cor2);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-inicio h2 {
+    max-width: 650px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.hero-inicio p {
+    max-width: 590px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.botao-hero {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botao-hero:hover {
+    background-color: var(--cor4);
+    color: white;
+}
+
+.rodape-inicio {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 2rem;
+    background-color: var(--cor1);
+    color: var(--cor2);
+}
+
+.rodape-inicio p {
+    margin: 0;
+}
+
+/* Ajustes de layout para celular. */
 @media (max-width: 650px) {
     header {
         flex-direction: column;
@@ -63,9 +131,14 @@ header {
     .navegacao {
         grid-template-columns: repeat(2, auto);
     }
+
+    .inicio .pagina-inicial {
+        min-height: 68vh;
+        padding: 3rem 1.5rem;
+        background-position: 62% center;
+    }
+
+    .rodape-inicio {
+        flex-direction: column;
+    }
 }
-
-
-
-
-
