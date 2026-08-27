@@ -76,9 +76,8 @@ header {
     padding: 0.5rem 1rem;
     border: 1px solid var(--cor2);
     color: var(--cor2);
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: bold;
-    letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
