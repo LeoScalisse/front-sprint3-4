@@ -1,3 +1,5 @@
+import PesquisaWikipedia from "../components/Pesquisawikipedia";
+
 const Solucao = () => {
   return (
     <main className="flex-1 bg-[#f7f5ef] px-6 py-16 text-[#263343] sm:px-10">
@@ -55,6 +57,8 @@ const Solucao = () => {
           </li>
 
         </ul>
+
+        <PesquisaWikipedia />
 
       </section>
     </main>
