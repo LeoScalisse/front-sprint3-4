@@ -2,6 +2,9 @@
 
 Site institucional da **TechNova**, empresa fictícia que apresenta o **JOVI**, uma solução que usa a câmera como ferramenta de aprendizagem para estudantes. O projeto foi desenvolvido na Sprint 3 e migrado de HTML, CSS e JavaScript puros para **React** com **Tailwind CSS**.
 
+Link do Deploy: https://front-sprint3-4.vercel.app/
+Link do Repositório: https://github.com/LeoScalisse/front-sprint3-4
+
 ## Índice
 
 - [Funcionalidades](#funcionalidades)
