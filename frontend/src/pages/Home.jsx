@@ -2,8 +2,7 @@ import { Link } from "react-router";
 
 const Home = () => {
   return (
-    <main className="relative grid min-h-[74vh] place-items-center bg-[#152238] bg-[url('/images/foto-main.png')] bg-cover bg-center px-6 py-16">
-
+<main className="relative grid min-h-[74vh] flex-1 place-items-center bg-[#152238] bg-[url('/images/foto-main.png')] bg-cover bg-center px-6 py-16">
       <div className="absolute inset-0 bg-gradient-to-r from-[#152238]/95 to-[#152238]/45" />
 
 
